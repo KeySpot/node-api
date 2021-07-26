@@ -1,0 +1,22 @@
+{
+  "name": "keyspot",
+  "version": "1.0.0",
+  "description": "KeySpot Nodejs API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeySpot/node-api.git"
+  },
+  "author": "Carl Schader",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeySpot/node-api/issues"
+  },
+  "homepage": "https://github.com/KeySpot/node-api#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
