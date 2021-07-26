@@ -1,7 +1,7 @@
 # KeySpot
-Sign up [here]{keyspot.app}
+Sign up [here]{https://keyspot.app}
 
-KeySpot is a tool to help manage environment variables for individuals and teams of developers. The service stores environment variables for your project in a centralized place so you don't have to juggle different .env files for your environements and applications. Once you have signed in at [keyspot.app]{keyspot.app}, you can create new records, share them with your team, and access them in code.
+KeySpot is a tool to help manage environment variables for individuals and teams of developers. The service stores environment variables for your project in a centralized place so you don't have to juggle different .env files for your environements and applications. Once you have signed in at [keyspot.app]{https://keyspot.app}, you can create new records, share them with your team, and access them in code.
 
 # Installation
 
@@ -11,7 +11,7 @@ KeySpot is a tool to help manage environment variables for individuals and teams
 
 # Usage
 
-Sign in to [KeySpot]{keyspot.app}, and create a record. At the top of each record's page there is an accessKey. Copy the accessKey as you will be using this to access your environment variables in code.
+Sign in to [KeySpot]{https://keyspot.app}, and create a record. At the top of each record's page there is an accessKey. Copy the accessKey as you will be using this to access your environment variables in code.
 
 Accessing your environment in code:
 ```
