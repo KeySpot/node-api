@@ -21,7 +21,7 @@ async function update(accessKey, record) {
 
 async function keyspot(accessKey, record=null) {
     if (record) {
-        return await update();
+        return await update(accessKey, record);
     } else {
         return await getRecord(accessKey);
     }
