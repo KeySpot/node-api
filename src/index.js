@@ -1,8 +1,8 @@
-import axios from 'axios';
+const axios = require('axios');
 
 const url = "https://database-driver-ifhogzjzbq-uc.a.run.app";
 
-export default async function getRecord(accessKey) {
+async function getRecord(accessKey) {
     try {
         const response = await axios.get(`${url}/${accessKey}`);
         return response.data;
@@ -11,10 +11,20 @@ export default async function getRecord(accessKey) {
     }
 }
 
-export async function update(accessKey, record) {
+async function update(accessKey, record) {
     try {
         await axios.put(`${url}/${accessKey}`, record);
     } catch (error) {
         throw error;
     }
 }
+
+async function keyspot(accessKey, record=null) {
+    if (record) {
+        return await update();
+    } else {
+        return await getRecord(accessKey);
+    }
+}
+
+module.exports = keyspot;
