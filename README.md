@@ -44,27 +44,3 @@ note: KeySpot also works with ES6:
 
 note: You will want to supply your program with your access key as your only environement variable or a command line argument.
 
-As command line argument:
-Terminal
-```
-    node index.js <accessKey> 
-```
-
-index.js
-```
-    const variables = await keyspot(process.argv[2]);
-```
-
-As environment variable:
-Terminal
-```
-    ACCESS_KEY=<accessKey>;
-
-    node index.js 
-```
-
-index.js
-```
-    const variables = await keyspot(process.env.ACCESS_KEY);
-```
-
