@@ -8,7 +8,7 @@ See our [usage tutorial]() on YouTube.
 # Installation
 
 ```bash
-    npm install --save keyspot
+$ npm install --save keyspot
 ```
 
 # Usage
@@ -17,29 +17,29 @@ Sign in to [KeySpot](https://keyspot.app), and create a record. At the top of ea
 
 Accessing your environment in code:
 ```javascript
-    const keyspot = require('keyspot');
+const keyspot = require('keyspot');
 
-    const variables = await keyspot('<accessKey>');
+const variables = await keyspot('<accessKey>');
 ```
 
 Updating your environment in code:
 ```javascript
-    const { update } = require('keyspot');
+const { update } = require('keyspot');
 
-    const newVariables = {
-        newVar1: "foo",
-        newVar2: "bar"
-    };
+const newVariables = {
+    newVar1: "foo",
+    newVar2: "bar"
+};
 
-    await update('<accessKey>', newVariables);
+await update('<accessKey>', newVariables);
 
 ```
 
 note: KeySpot also works with ES6:
 ```javascript
-    import keyspot from 'keyspot';
+import keyspot from 'keyspot';
 
-    const variables = await keyspot('<accessKey>');
+const variables = await keyspot('<accessKey>');
 ```
 
 note: You will want to supply your program with your access key as your only environement variable or a command line argument.
