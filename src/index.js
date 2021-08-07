@@ -13,7 +13,7 @@ async function getRecord(accessKey) {
 
 async function update(accessKey, record) {
     try {
-        await axios.put(`${url}/${accessKey}`, record);
+        await axios.patch(`${url}/${accessKey}`, record);
     } catch (error) {
         throw error;
     }
