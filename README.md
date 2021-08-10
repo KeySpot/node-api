@@ -13,13 +13,13 @@ $ npm install --save keyspot
 
 # Usage
 
-Sign in to [KeySpot](https://keyspot.app), and create a record. At the top of each record's page there is an accessKey. Copy the accessKey as you will be using this to access your environment variables in code.
+Sign in to [KeySpot](https://keyspot.app), and create a record. At the top of each record's page there is an accessKey. Copy the accessKey as you will be using this to access your environment variables in code. Then you can directly add your secrets to process.env in code:
 
 Accessing your environment in code:
 ```javascript
 const keyspot = require('keyspot');
 
-// secrets are automatically be added to process.env
+// secrets are automatically added to process.env
 const secrets = await keyspot('<accessKey>');
 ```
 
