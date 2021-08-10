@@ -19,19 +19,20 @@ Accessing your environment in code:
 ```javascript
 const keyspot = require('keyspot');
 
-const variables = await keyspot('<accessKey>');
+// secrets are automatically be added to process.env
+const secrets = await keyspot('<accessKey>');
 ```
 
 Updating your environment in code:
 ```javascript
 const { update } = require('keyspot');
 
-const newVariables = {
-    newVar1: "foo",
-    newVar2: "bar"
+const newSecrets = {
+    VAR1: "foo",
+    VAR2: "bar"
 };
 
-await update('<accessKey>', newVariables);
+await update('<accessKey>', newSecrets);
 
 ```
 

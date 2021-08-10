@@ -1,4 +1,5 @@
 const axios = require('axios');
+const process = require('process');
 
 const url = "https://database-driver-ifhogzjzbq-uc.a.run.app";
 
@@ -19,11 +20,17 @@ async function update(accessKey, record) {
     }
 }
 
-async function keyspot(accessKey, record=null) {
+async function keyspot(accessKey, record=null, options={ env: true }) {
     if (record) {
         return await update(accessKey, record);
     } else {
-        return await getRecord(accessKey);
+        const record = await getRecord(accessKey);
+        
+        if (options.env) {
+            Object.assign(process.env, record)
+        }
+
+        return record;
     }
 }
 
